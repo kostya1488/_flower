@@ -85,7 +85,8 @@ section {
 @media (max-width: 575px) {
   .section_header .logo,
   .section_header .contacts {
-    color: #fff; }
+    color: #fff;
+    padding-top: 16px; }
   .section_header .toggle_button {
     position: absolute;
     top: 20px;
@@ -191,11 +192,11 @@ section {
       bottom: 60px; } }
   @media (max-width: 767px) {
     .section_intro {
-      background: url(../assets/intro_mob.jpg) no-repeat 53% 0; }
+      background: url(../assets/intro_mob.jpg) no-repeat 58% 69%; }
       .section_intro .preview_box {
         text-align: center; }
         .section_intro .preview_box .title {
-          font-size: 90px;
+          font-size: 77px;
           line-height: 114px;
           /* identical to box height */
           letter-spacing: 0.13em; }
@@ -205,7 +206,9 @@ section {
           /* or 28px */
           margin-bottom: 11px; }
         .section_intro .preview_box .description {
-          margin-bottom: 12px; } }
+          margin-bottom: 12px; }
+        .section_intro .preview_box .main_btn {
+          display: block; } }
 
 .section_promo .section_title {
   margin-bottom: 50px;
@@ -303,8 +306,6 @@ section {
   .section_vacancies .section_title {
     color: #FFF;
     margin-bottom: 60px; }
-  .section_vacancies .vacancy_item + .vacancy_item {
-    margin-left: 44px; }
   .section_vacancies .vacancy_item {
     text-align: center;
     background: #28292C;
@@ -323,11 +324,24 @@ section {
     .section_vacancies .vacancy_item .item_description {
       color: #fff;
       font-weight: 400; }
+  @media (min-width: 576px) {
+    .section_vacancies .vacancy_item + .vacancy_item {
+      margin-left: 44px; } }
   @media (max-width: 991px) {
     .section_vacancies {
       padding-bottom: 30px; }
       .section_vacancies .vacancy_item {
         margin-bottom: 70px; } }
+  @media (max-width: 575px) {
+    .section_vacancies {
+      padding-bottom: 0; }
+      .section_vacancies .vacancy_item {
+        margin-left: 20px;
+        margin-right: 20px; }
+      .section_vacancies .item_text_box .section_subtitle {
+        font-size: 30px;
+        line-height: 116.4%;
+        /* identical to box height, or 35px */ } }
 
 .section_anketa .section_title {
   color: #A12A8D; }
@@ -335,11 +349,6 @@ section {
 .section_anketa .section_subtitle {
   color: rgba(101, 101, 101, 0.9);
   margin-bottom: 52px; }
-
-.section_anketa .form_wrap {
-  height: 700px;
-  background: url(../assets/anketa.jpg) no-repeat 100% 0;
-  background-size: 730px; }
 
 .section_anketa .form_box {
   background: #FFFFFF;
@@ -358,14 +367,28 @@ section {
     background: #F5F6F8; }
   .section_anketa .form_box button {
     border: none;
-    outline: none;
-    margin-bottom: 17px; }
+    outline: none; }
+
+@media (min-width: 576px) {
+  .section_anketa .form_wrap {
+    height: 700px;
+    background: url(../assets/anketa.jpg) no-repeat 100% 0;
+    background-size: 730px; }
+  .section_anketa .form_box button {
+    margin-bottom: 17px; } }
 
 @media (max-width: 991px) {
   .section_anketa .form_wrap {
     background-position: -250px; }
   .section_anketa .section_subtitle {
     margin-bottom: 35px; } }
+
+@media (max-width: 575px) {
+  .section_anketa .section_title {
+    margin-bottom: 24px; }
+  .section_anketa .form_box {
+    margin-left: 15px;
+    margin-right: 15px; } }
 
 .section_FAQ {
   background: #590634;
@@ -393,16 +416,11 @@ section {
   padding-top: 40px;
   padding-bottom: 40px; }
   .section_footer .logo {
-    font-weight: bold;
-    font-size: 30.5357px;
-    line-height: 37px;
-    /* identical to box height */ }
+    font-weight: bold; }
   .section_footer .text_color {
     color: #A12A8D; }
-  .section_footer .menu_item {
-    padding: 15px 0; }
-    .section_footer .menu_item a {
-      color: #000000; }
+  .section_footer .menu_item a {
+    color: #000000; }
   @media (min-width: 992px) {
     .section_footer .menu_item {
       width: 100px; }
@@ -410,10 +428,20 @@ section {
       height: 120px; }
     .section_footer .main_btn {
       margin-top: 20px; } }
-  @media (max-width: 991px) {
+  @media (min-width: 576px) and (max-width: 991px) {
     .section_footer {
       padding-top: 30px; }
       .section_footer nav {
         padding-top: 40px;
         margin-top: 30px;
         border-top: 1px solid rgba(0, 0, 0, 0.2); } }
+  @media (min-width: 576px) {
+    .section_footer .menu_item {
+      padding: 15px 0; }
+    .section_footer .logo {
+      font-size: 30.5357px;
+      line-height: 37px;
+      /* identical to box height */ } }
+  @media (max-width: 575px) {
+    .section_footer .menu_item + .menu_item {
+      margin-top: 9px; } }

@@ -130,6 +130,7 @@ section {
         .logo,
         .contacts {
             color: #fff;
+            padding-top: 16px;
         }
         .toggle_button {
             position: absolute;
@@ -268,11 +269,11 @@ section {
         }
     }
     @media (max-width: $screen_sm_max) {
-        background: url(../assets/intro_mob.jpg) no-repeat 53% 0;
+        background: url(../assets/intro_mob.jpg) no-repeat 58% 69%;
         .preview_box {
             text-align: center;
             .title {
-                font-size: 90px;
+                font-size: 77px;
                 line-height: 114px;
                 /* identical to box height */
                 letter-spacing: 0.13em;
@@ -285,6 +286,9 @@ section {
             }
             .description {
                 margin-bottom: 12px;
+            }
+            .main_btn {
+                display: block;
             }
         }
     }
@@ -424,9 +428,6 @@ section {
         color: #FFF;
         margin-bottom: 60px;
     }
-    .vacancy_item+.vacancy_item {
-        margin-left: 44px;
-    }
     .vacancy_item {
         text-align: center;
         background: #28292C;
@@ -452,10 +453,27 @@ section {
             font-weight: 400;
         }
     }
+    @media (min-width: $screen_sm) {
+        .vacancy_item+.vacancy_item {
+            margin-left: 44px;
+        }
+    }
     @media (max-width: $screen_md_max) {
         padding-bottom: 30px;
         .vacancy_item {
             margin-bottom: 70px;
+        }
+    }
+    @media (max-width: $screen_xs_max) {
+        padding-bottom: 0;
+        .vacancy_item {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .item_text_box .section_subtitle {
+            font-size: 30px;
+            line-height: 116.4%;
+            /* identical to box height, or 35px */
         }
     }
 }
@@ -469,11 +487,6 @@ section {
     .section_subtitle {
         color: rgba(101, 101, 101, 0.9);
         margin-bottom: 52px;
-    }
-    .form_wrap {
-        height: 700px;
-        background: url(../assets/anketa.jpg) no-repeat 100% 0;
-        background-size: 730px;
     }
     .form_box {
         background: #FFFFFF;
@@ -495,6 +508,15 @@ section {
         button {
             border: none;
             outline: none;
+        }
+    }
+    @media (min-width: $screen_sm) {
+        .form_wrap {
+            height: 700px;
+            background: url(../assets/anketa.jpg) no-repeat 100% 0;
+            background-size: 730px;
+        }
+        .form_box button {
             margin-bottom: 17px;
         }
     }
@@ -504,6 +526,15 @@ section {
         }
         .section_subtitle {
             margin-bottom: 35px;
+        }
+    }
+    @media (max-width: $screen_xs_max) {
+        .section_title {
+            margin-bottom: 24px;
+        }
+        .form_box {
+            margin-left: 15px;
+            margin-right: 15px;
         }
     }
 }
@@ -544,18 +575,12 @@ section {
     padding-bottom: 40px;
     .logo {
         font-weight: bold;
-        font-size: 30.5357px;
-        line-height: 37px;
-        /* identical to box height */
     }
     .text_color {
         color: $brand_text_color;
     }
-    .menu_item {
-        padding: 15px 0;
-        a {
-            color: #000000;
-        }
+    .menu_item a {
+        color: #000000;
     }
     @media (min-width: $screen_lg) {
         .menu_item {
@@ -568,12 +593,27 @@ section {
             margin-top: 20px;
         }
     }
-    @media (max-width: $screen_md_max) {
+    @media (min-width: $screen_sm) and (max-width: $screen_md_max) {
         padding-top: 30px;
         nav {
             padding-top: 40px;
             margin-top: 30px;
             border-top: 1px solid rgba(0, 0, 0, 0.2);
+        }
+    }
+    @media (min-width: $screen_sm) {
+        .menu_item {
+            padding: 15px 0;
+        }
+        .logo {
+            font-size: 30.5357px;
+            line-height: 37px;
+            /* identical to box height */
+        }
+    }
+    @media (max-width: $screen_xs_max) {
+        .menu_item+.menu_item {
+            margin-top: 9px;
         }
     }
 }
