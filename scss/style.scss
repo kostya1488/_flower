@@ -107,10 +107,11 @@ section {
     .logo,
     .contacts {
         font-weight: 600;
+        color: #ffffff;
     }
     .menu_item {
         a {
-            color: #000000;
+            color: #ffffff;
         }
     }
     #toggle {
@@ -118,7 +119,7 @@ section {
         visibility: hidden;
     }
     @media (min-width: $screen_sm) {
-        background: #fff;
+        background: #a12a8dd9;
         position: fixed;
         width: 100%;
         z-index: 100;
@@ -248,7 +249,7 @@ section {
     }
     @media (min-width: $screen_xl) {
         .preview_box {
-            margin-top: 20%;
+            margin-top: 30%;
         }
         .block_scroll_down {
             left: 50%;
@@ -256,7 +257,7 @@ section {
         }
     }
     @media (min-width: $screen_sm) {
-        background: url(../assets/intro.jpg) no-repeat 50% 0;
+        background: url(../assets/intro6.jpg) no-repeat 50% 0%;
         background-size: cover;
     }
     @media (max-width: $screen_lg_max) {
@@ -442,7 +443,7 @@ section {
             }
         }
         .item_text_box {
-            padding: 37px 15px;
+            padding: 50px 15px;
         }
         .section_subtitle {
             color: $brand_text_color;
@@ -540,8 +541,8 @@ section {
 }
 
 // ========================================================== / section_anketa  
-// ---------------------------------------------------------- section_anketa  
-.section_FAQ {
+// ---------------------------------------------------------- section_contacts  
+.section_contacts {
     background: #590634;
     color: #fff;
     position: relative;
@@ -552,14 +553,14 @@ section {
     .main_btn {
         margin-top: 21px;
     }
-    img {
+    .faq_img {
         position: absolute;
         bottom: 60px;
         left: 30px;
     }
     @media (max-width: $screen_md_max) {
         padding: 50px 0;
-        img {
+        .faq_img {
             position: absolute;
             width: 332px;
             bottom: 25px;
@@ -568,7 +569,7 @@ section {
     }
 }
 
-// ========================================================== / section_anketa  
+// ========================================================== / section_contacts  
 // ---------------------------------------------------------- section_footer  
 .section_footer {
     padding-top: 40px;

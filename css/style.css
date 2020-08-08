@@ -64,10 +64,11 @@ section {
 
 .section_header .logo,
 .section_header .contacts {
-  font-weight: 600; }
+  font-weight: 600;
+  color: #ffffff; }
 
 .section_header .menu_item a {
-  color: #000000; }
+  color: #ffffff; }
 
 .section_header #toggle {
   position: absolute;
@@ -75,7 +76,7 @@ section {
 
 @media (min-width: 576px) {
   .section_header {
-    background: #fff;
+    background: #a12a8dd9;
     position: fixed;
     width: 100%;
     z-index: 100; }
@@ -176,13 +177,13 @@ section {
     transform: translateY(-10px); } }
   @media (min-width: 1200px) {
     .section_intro .preview_box {
-      margin-top: 20%; }
+      margin-top: 30%; }
     .section_intro .block_scroll_down {
       left: 50%;
       margin-left: -32px; } }
   @media (min-width: 576px) {
     .section_intro {
-      background: url(../assets/intro.jpg) no-repeat 50% 0;
+      background: url(../assets/intro6.jpg) no-repeat 50% 0%;
       background-size: cover; } }
   @media (max-width: 1199px) {
     .section_intro .block_scroll_down {
@@ -317,7 +318,7 @@ section {
       height: 100%;
       object-fit: cover; }
     .section_vacancies .vacancy_item .item_text_box {
-      padding: 37px 15px; }
+      padding: 50px 15px; }
     .section_vacancies .vacancy_item .section_subtitle {
       color: #A12A8D;
       margin-bottom: 20px; }
@@ -390,23 +391,23 @@ section {
     margin-left: 15px;
     margin-right: 15px; } }
 
-.section_FAQ {
+.section_contacts {
   background: #590634;
   color: #fff;
   position: relative;
   overflow: visible; }
-  .section_FAQ .section_title {
+  .section_contacts .section_title {
     color: #EDE2C6; }
-  .section_FAQ .main_btn {
+  .section_contacts .main_btn {
     margin-top: 21px; }
-  .section_FAQ img {
+  .section_contacts .faq_img {
     position: absolute;
     bottom: 60px;
     left: 30px; }
   @media (max-width: 991px) {
-    .section_FAQ {
+    .section_contacts {
       padding: 50px 0; }
-      .section_FAQ img {
+      .section_contacts .faq_img {
         position: absolute;
         width: 332px;
         bottom: 25px;
