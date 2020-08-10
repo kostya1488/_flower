@@ -91,7 +91,7 @@
                 </div>
                 <div class="photo_box d-none d-sm-block col-sm-5 col-lg-6">
                     <img class="img_back" src="assets/promo_back.jpg" alt="">
-                    <img class="img_front" src="assets/pexels-photo-1453008.jpeg" alt="">
+                    <img class="img_front" src="assets/promo_front.jpeg" alt="">
                 </div>
             </div>
         </div>
@@ -100,7 +100,7 @@
     <!-- ---------------------------------------------------------- section_video  -->
     <section id="video" class="section_video">
         <div class="container-fluid p-0">
-            <video width="100%" autoplay loop>
+            <video width="100%" autoplay>
             <source src="assets/video.mp4" type='video/ogg; codecs="theora, vorbis"'>           
            </video></div>
     </section>
@@ -185,40 +185,40 @@
                 <div class="section_title text-center text-lg-left col-8 col-lg-12">Стань частью нашей команды</div>
                 <div class="section_subtitle d-none d-sm-block pl-5">и мы свяжемся с тобой</div>
             </div>
-            <div class="form_wrap row justify-content-end justify-content-lg-start pt-sm-5 align-items-start">
-                <div class="form_box col-sm-9 col-lg-6">
-                    <form action="" class="d-flex flex-column align-items-center">
+            <div class="form_wrap row align-items-center  justify-content-sm-end justify-content-lg-start pt-sm-5 align-items-sm-start">
+                <div id="form_box" class=" col-sm-9 col-lg-6">
+                    <form id="ajax_form" action="" class="d-flex flex-column align-items-center">
                         <div class="section_subtitle d-none d-sm-block">Заполни и мы перезвоним</div>
                         <input class="input" type="text" name="name" placeholder="Имя" required>
                         <input class="input" type="text" name="tel" placeholder="Телефон" required>
                         <input class="input" type="number" name="age" placeholder="Возраст">
                         <input class="input" type="email" name="email" placeholder="Email">
-                        <div> <button class="main_btn">Отправить</button>
+                        <div>
+                            <button id="btn" class="main_btn" type="submit">Отправить</button>
                         </div>
                     </form>
                 </div>
-
             </div>
         </div>
     </section>
     <!-- ========================================================== / section_anketa  -->
     <!-- ---------------------------------------------------------- section_contacts  -->
-    <section id="contacts " class="section_contacts">
+    <section id="contacts" class="section_contacts">
         <div class="container">
             <div class="row justify-content-end">
-                <div class="col-6 section_title text-center mb-4">Наши контакты</div>
+                <div class="col-sm-5 section_title text-center mb-4">Наши контакты</div>
             </div>
-            <div class="row  justify-content-end">
-                <div class="col-3 text-center">
+            <div class="row justify-content-center justify-content-sm-end">
+                <div class="col-sm-3 text-center">
                     <ul>
-                        <li class="mb-2"><a href="tel:+">099-666-14-88</a></li>
-                        <li class="mb-2"><a href="tel:+">099-666-14-88</a></li>
-                        <li class="mb-2"><a href="tel:+">099-666-14-88</a></li>
-                        <li class=""><a href="tel:+">099-666-14-88</a></li>
+                        <li class="mb-2"><a class="phone_link" href="tel:+">099-666-14-88</a></li>
+                        <li class="mb-2"><a class="phone_link" href="tel:+">099-666-14-88</a></li>
+                        <li class="mb-2"><a class="phone_link" href="tel:+">099-666-14-88</a></li>
+                        <li class=""><a class="phone_link" href="tel:+">099-666-14-88</a></li>
                     </ul>
                 </div>
-                <div class="col-3 text-center">
-                    <ul class="h-100 d-flex flex-column justify-content-around">
+                <div class="col-8 col-sm-2 mt-4 mt-sm-0 text-center">
+                    <ul class="h-100 d-flex flex-sm-column justify-content-around">
                         <li class="">
                             <a href=""><img src="assets/svg/insta.svg" alt=""></a>
                         </li>
@@ -261,7 +261,7 @@
                 </nav>
                 <div class="col-8 col-lg-4 order-2 order-lg-3 text-lg-center d-none    d-sm-flex d-lg-block pr-0">
                     <div class="text_color pr-3">Интересует стабильный доход ?</div>
-                    <a href="#anketa" class="main_btn">Заполнить анкету</a>
+                    <a href="#anketa" class="main_btn nav_link">Заполнить анкету</a>
                 </div>
             </div>
         </div>
